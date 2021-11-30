@@ -11,7 +11,7 @@
 
 
 
-<style>
+<style lang="scss">
 	main {
 		flex: 1;
 		display: flex;

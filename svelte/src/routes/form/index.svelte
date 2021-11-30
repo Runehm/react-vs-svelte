@@ -1,4 +1,5 @@
 <script>
+  // import '../../styles/form.scss';
 
   let firstName = '';
   let lastName = '';
@@ -21,7 +22,7 @@
     <title>Form</title>
 </svelte:head>
 
-<div class="content">
+<div class="form__wrapper">
 
     <div class="form__preWrapper">
         <pre>First Name: {firstName}</pre>
@@ -84,15 +85,8 @@
         <button class='button button__ghost button--extraPadding' on:click={handleSubmit}>Send</button>
     </form>
 
-
 </div>
 
 <style lang="scss">
   @import "src/styles/form.scss";
-
-  .content {
-    width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
-  }
 </style>
