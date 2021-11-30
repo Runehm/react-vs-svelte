@@ -23,7 +23,7 @@ The purpose of this research monorepo is to find pro's and con's of both framewo
 
 ### What?
 
-We will a set of simple proof of concept components (the ussual suspects: todo-app, counter, login mask) You know the drill.
+We will a set of simple proof of concept components (the ussual suspects: form, todo-app, counter, login mask) You know the drill.
 
 This way we can analyse the code syntax etc.
 
