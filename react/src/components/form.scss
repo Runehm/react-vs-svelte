@@ -1,0 +1,126 @@
+
+.form {
+
+  &__wrapper {
+    margin: 4rem 0 0 0;
+
+    h1 {
+      font-size: 20px;
+      padding: 1rem 0;
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  min-height: 80vh;
+  width: 100%;
+  max-width: 35rem;
+
+
+  & p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    max-width: 35rem;
+  }
+
+  &__section {
+    display: flex;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+
+  &__field {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    width: 50%;
+    margin-bottom: 0;
+
+
+    &--fullWidth {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    display: block;
+    color: #4a5568;
+    font-size: 0.75rem;
+    letter-spacing: 0.025em;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input {
+    appearance: none;
+    background-color: #f4f4f5;
+    border-color: #f4f4f5;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    display: block;
+    line-height: 1.25;
+    padding: 0.75rem 1rem;
+    color: #4a5568;
+    width: 100%;
+
+    &:focus {
+      outline: 0;
+      border-color: #a0aec0;
+      background-color: #fff;
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 12rem;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: .65rem 2.8rem;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.04rem;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  transition: background .3s cubic-bezier(.14, .4, .09, .99);
+
+  &:hover {
+    background: black;
+    color: white;
+    text-decoration: none;
+  }
+
+  &__ghost {
+    border: solid 1px black;
+  }
+
+  &__filled {
+    background: black;
+    color: #ffffff;
+
+    &:hover {
+      background: rgb(0 0 0 / .75);
+      color: white;
+    }
+  }
+
+  &--extraPadding {
+    padding: .95rem 3.8rem;
+  }
+}
+

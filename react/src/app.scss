@@ -1,0 +1,68 @@
+
+
+body,
+input,
+select,
+textarea,
+body * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #f4f4f5;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+body {
+  background-color: #b9c6d2;
+}
+
+html,
+html a {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.react {
+
+  font-family: 'Montserrat', sans-serif;
+
+  padding: 3rem 2.5rem;
+  margin: 0 auto;
+  max-width: 1500px;
+  color: #333;
+
+  &__title {
+    text-align: center;
+  }
+}
