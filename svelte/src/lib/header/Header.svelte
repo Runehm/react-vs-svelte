@@ -1,13 +1,11 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+<!--		<span>Left</span>-->
+		<h2>Svelte</h2>
 	</div>
 
 	<nav>
@@ -16,7 +14,7 @@
 		</svg>
 		<ul>
 			<li class:active={$page.path === '/'}><a sveltekit:prefetch href="/">Home</a></li>
-			<li class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></li>
+			<li class:active={$page.path === '/form'}><a sveltekit:prefetch href="/form">Form</a></li>
 			<li class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -25,8 +23,10 @@
 	</nav>
 
 	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+<!--		<span>Right</span>-->
 	</div>
+
+
 </header>
 
 <style>
@@ -40,18 +40,10 @@
 		height: 3em;
 	}
 
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
+	h2 {
+		padding-left: 1rem;
+		font-weight: bold;
+		letter-spacing: 2px;
 	}
 
 	nav {
