@@ -16,15 +16,17 @@ export const Form = () => {
     setFormState({...formState, [e.target.name]: e.target.value})
   }
 
-  const handleSubmit = () => {
-    alert(`Form submitted!! firstName: ${formState.firstName}, lastName: ${formState.lastName}, email: ${formState.email}, message: ${formState.message}` )
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert(`Form submitted!! firstName: ${formState.firstName}, lastName: ${formState.lastName}, email: ${formState.email}, message: ${formState.message}`)
+    setFormState(initState)
   }
 
   return (
     <div className="form__wrapper">
 
       <form className="form">
-      <h1>Form</h1>
+        <h1>Form</h1>
         <div className="form__section">
           <div className="form__field">
             <label className="form__label">First Name</label>
@@ -76,7 +78,6 @@ export const Form = () => {
             />
           </div>
         </div>
-
 
         <button
           className='button button__ghost button--extraPadding'
