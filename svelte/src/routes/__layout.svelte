@@ -1,6 +1,6 @@
 <script>
 	import Header from '$lib/header/Header.svelte';
-	import '../app.css';
+	import '../styles/base.scss';
 </script>
 
 <Header />
@@ -20,6 +20,7 @@
 		width: 100%;
 		max-width: 1024px;
 		margin: 0 auto;
+		gap: 3rem;
 		box-sizing: border-box;
 	}
 </style>
