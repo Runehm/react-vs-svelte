@@ -23,9 +23,9 @@ The purpose of this research monorepo is to find pro's and con's of both framewo
 
 ### What?
 
-We will a set of simple proof of concept components (the ussual suspects: form, todo-app, counter, login mask) You know the drill.
+We will create a set of simple proof of concept components (the usual suspects: form, todo-app, counter, login mask) You know the drill.
 
-Furthermore we want to write simple unit tests to be able to compare the complexity of writing unit tests in the different frameworks
+Furthermore, we want to write simple unit tests to be able to compare the complexity of writing unit tests in the different frameworks
 
 This way we can analyse the code syntax etc.
 

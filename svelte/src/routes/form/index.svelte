@@ -1,5 +1,4 @@
 <script>
-  // import '../../styles/form.scss';
 
   let firstName = '';
   let lastName = '';
